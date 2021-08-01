@@ -1,0 +1,16 @@
+/*=========================== Edit Profile page css ============================*/
+.facebook {
+  background: #3a559f;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.25rem;
+  border-radius: 3px;
+}
+.login-form .facebook:hover {
+  color: #fff;
+}
+
+.login-form .fb-icon {
+  width: 25px;
+  height: auto;
+}

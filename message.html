@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css"> -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel='stylesheet' href='css/slick.css'>
+	<link rel='stylesheet' href='css/slick-theme.css'>
+	<!-- CSS stylesheet for sliding-swipe-menu -->
+	<link rel="stylesheet" href="css/slide-and-swipe-menu.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="css/secondpage.css">
+  <link rel="stylesheet" type="text/css" href="css/message.css">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./imgs/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./imgs/favicon-16x16.png">
+  <link rel="manifest" href="./imgs/site.webmanifest">
+	<title>SoogPiece | Message </title>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body id="pageone">
+  <section class="header-mobile-main d-lg-none d-block">
+    <div class="container-fluid">
+      <div class="row pb-2">
+        <div class="col-1" style="margin-top: 4px;">
+          <i class="fa fa-bars mobile-bars ssm-toggle-nav" id="open-sidebar"></i>
+        </div>
+       
+        <div class="col d-flex justify-content-between">
+          <a href="index.html" class="m-name" style="margin-top: 4px;">
+            <h3 class=""><img width="84" src="./imgs/logo.png"></h3>
+          </a>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="d-flex align-items-center justify-content-between" style="margin-top: 10px;">
+              <a href="my_account.html">
+                <img src="./imgs/bookmark.svg" alt="bookmark" class="icon-search">
+              </a>
+              <a href="message.html"><i class="fa fa-envelope-o pl-3 pr-1 icon-search"></i></a>
+              <a href="profile.html"><i class="fa fa-user-circle pl-3 pr-1 icon-search"></i></a>
+            </span>
+            <span class="search-toggle float-right" style="margin-top: 3px;">
+              <i class="fa fa-search mobile-bars pl-3 pr-1 search-icon icon-search"></i>
+            </span>
+          </div>
+        </div>
+        <div class="col-xs-12 topnav">
+          <div class="search-container">
+            <form action="/action_page.php">
+              <div class="input-group pl-1" style="background: #eee;">
+                <input type="text" id="mobile-filter" class="form-control" placeholder="Search">
+                <div class="input-group-prepend">
+                  <div class="input-group-text search-icon" style="border-radius: 0px 2px 2px 0px;">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="dropdown1">
+              <div id="myDropdown" class="dropdown-content mob-search-scroll  mobile-search-all-border">
+                <div class="col-md-12 mob-cat-list-bg">
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/car.png">
+                      <label class="form-check-label pl-2 dark-blue" for="gridRadios1">Car Part</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/truck.png">
+                      <label class="form-check-label pl-2 dark-blue" for="gridRadios1">Truk Part</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/machine.png">
+                      <label class="form-check-label pl-2 brown" for="gridRadios1">Machine Part</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/work.png">
+                      <label class="form-check-label pl-2 brown" for="gridRadios1">Works Shop &amp; Service</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/filter.png">
+                      <label class="form-check-label pl-2 brown" for="gridRadios1">Filtre</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/wind.png">
+                      <label class="form-check-label pl-2 green" for="gridRadios1">Windshield</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/batery.png">
+                      <label class="form-check-label pl-2 brown" for="gridRadios1">Battery</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/lube.png">
+                      <label class="form-check-label pl-2 purple" for="gridRadios1">Lubricant &amp; Grease</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/acces.png">
+                      <label class="form-check-label pl-2 sky-blue" for="gridRadios1">Accesories</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/tyre.png">
+                      <label class="form-check-label pl-2 yellow" for="gridRadios1">Tire &amp; Wheels</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/truck.png">
+                      <label class="form-check-label pl-2 yellow" for="gridRadios1">Truck Assistance</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/ac.png">
+                      <label class="form-check-label pl-2 yellow" for="gridRadios1">Air Conditioner</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/lathe.png">
+                      <label class="form-check-label pl-2 yellow" for="gridRadios1">Lathe Milling</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/electric.png">
+                      <label class="form-check-label pl-2 yellow" for="gridRadios1">Electrical Part</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/agri.png">
+                      <label class="form-check-label pl-2 yellow" for="gridRadios1">Agriculturer Part</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/industril.png">
+                      <label class="form-check-label pl-2 yellow" for="gridRadios1">Industrial Part</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/belt.png">
+                      <label class="form-check-label pl-2 yellow" for="gridRadios1">Belt & Bearing</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/joint.png">
+                      <label class="form-check-label pl-2 yellow" for="gridRadios1">Joint Split</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 mobile-search-list-border px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="...">
+                      <img class="ml-4" width="34" height="24" src="./imgs/gcolor/tools.png">
+                      <label class="form-check-label pl-2 yellow" for="gridRadios1">Tools</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 px-1">
+                      <input class="mobile-search-input" type="radio" name="blankRadio" id="blankRadio1"
+                        value="option1" aria-label="..." checked="">
+                      <label class="form-check-label pl-4" style="display: inline-block;" for="gridRadios1">Rechercher
+                        dans tout le site</label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar -->
+  </section>
+
+  <nav id="mySidebar">
+    <div class="w3-sidebar w3-bar-block w3-border-right">
+      <div class="row m-0">
+        <div class="col-md-12 position-relative post-list">
+          <p class="mb-0" id="post-list-text-1"><a href="#">Post listing</a></p>
+          <img class="admin" src="./imgs/admin.jpg">
+          <p class="mb-0" id="post-list-text-2"><a href="#">My account</a></p>
+        </div>
+        <!-- ./accoutn secction -->
+
+        <div class="col-md-12 p-0 cat-list cat-list-bg">
+          <a href="my_account.html">
+            <div class="row m-0 cat-list-top-row-1" data-toggle="collapse" data-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">
+                <div class="col-9">
+                  <h4 class=" h5 mt-2">My Account</h4>
+                </div>
+                <div class="col-3 pr-2 text-right">
+                  <img class="w-100 rounded-circle" src="./imgs/profile/user.png" alt="user">
+                </div>
+            </div>
+          </a>
+          <!-- ./example -->
+
+          <a href="addlist.html">
+            <div class="row m-0 cat-list-top-row-2" data-toggle="collapse" data-target="#collapseExample-1"
+              aria-expanded="false" aria-controls="collapseExample-1">
+              <div class="col-9">
+                <h4 class=" h5 mt-2">Add Listing</h4>
+              </div>
+              <div class="col-3 pr-2 text-right">
+                <img src="./imgs/profile/addlist.jpeg" alt="addlist">
+              </div>
+            </div>
+          </a>
+          <!-- ./example 1 -->
+
+          <a href="mylist.html">
+            <div class="row m-0 cat-list-top-row-2" data-toggle="collapse" data-target="#collapseExample-1"
+              aria-expanded="false" aria-controls="collapseExample-1">
+              <div class="col-9">
+                <h4 class=" h5 mt-2">My Listings</h4>
+              </div>
+              <div class="col-3 pr-2 text-right">
+                <img src="./imgs/profile/mylist.jpeg" alt="mylist">
+              </div>
+            </div>
+          </a>
+          <!-- ./example 1 -->
+
+          <a href="message.html">
+            <div class="row m-0 cat-list-top-row-2" data-toggle="collapse" data-target="#collapseExample-1"
+              aria-expanded="false" aria-controls="collapseExample-1">
+              <div class="col-9">
+                <h4 class=" h5 mt-2">Messaage</h4>
+              </div>
+              <div class="col-3 pr-2 text-right">
+                <img class="w-100 rounded-circle" src="./imgs/profile/msg.png">
+              </div>
+            </div>
+          </a>
+          <!-- ./example 1 -->
+
+          <a href="directory.html">
+            <div class="row m-0 cat-list-top-row-2" data-toggle="collapse" data-target="#collapseExample-1"
+              aria-expanded="false" aria-controls="collapseExample-1">
+              <div class="col-9">
+                <h4 class=" h5 mt-2">Directory</h4>
+              </div>
+              <div class="col-3 pr-2 text-right">
+                <img class="w-100" src="./imgs/profile/dir.jpeg">
+              </div>
+            </div>
+          </a>
+          <!-- ./example 1 -->
+          <a href="setting.html">
+            <div class="row m-0  cat-list-top-row-2" data-toggle="collapse" data-target="#collapseExample-2"
+              aria-expanded="false" aria-controls="collapseExample-2">
+              <div class="col-9">
+                <h4 class=" h5 mt-2">Settings</h4>
+              </div>
+              <div class="col-3 pr-2 text-right">
+                <i class="fa fa-store"></i>
+                <img class="w-100 rounded-circle" src="./imgs/profile/cog.png">
+              </div>
+            </div>
+          </a>
+          <!-- ./example 2 -->
+        </div>
+        <!-- mobile sidebar list -->
+      </div>
+    </div>
+  </nav>
+	<!-- Page Content -->
+	<div id="content">
+		<section class="cat-search pt-1 px-4">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-7 col-md-6 col-5 pl-lg-0 pr-lg-2 position-relative  d-lg-block d-none">
+						<div class="slider" style="padding-left: 0px !important; display: none;">
+							<div class="main">
+                <div class="slider slider-for" style="border-radius: 6px;">
+                  <div>
+                    <a href="#"><img src="./imgs/1.jpg" class="d-block w-100 main-slider-img" alt="..."></a>
+                  </div>
+                  <div>
+                    <a href="#"><img src="./imgs/2.jpg" class="d-block w-100 main-slider-img" alt="..."></a>
+                  </div>
+                  <div>
+                    <a href="#"><img src="./imgs/3.jpg" class="d-block w-100 main-slider-img" alt="..."></a>
+                  </div>
+                  <div>
+                    <a href="#"><img src="./imgs/4.jpg" class="d-block w-100 main-slider-img" alt="..."></a>
+                  </div>
+                  <div>
+                    <a href="#"><img src="./imgs/5.jpg" class="d-block w-100 main-slider-img" alt="..."></a>
+                  </div>
+                </div>
+								<div class="slider slider-nav" style="display: none;">
+									<a href="#">
+										<img src="./imgs/1.jpg" height="150" class="d-block w-100" alt="...">
+									</a>
+									<a href="#">
+										<img src="./imgs/2.jpg" height="150" class="d-block w-100" alt="...">
+									</a>
+									<a href="#">
+										<img src="./imgs/3.jpg" height="150" class="d-block w-100" alt="...">
+									</a>
+									<a href="#">
+										<img src="./imgs/4.jpg" height="150" class="d-block w-100" alt="...">
+									</a>
+									<a href="#">
+										<img src="./imgs/5.jpg" height="150" class="d-block w-100" alt="...">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Profile-section -->
+    <section id="profile">
+  		<div class="container-fluid link-bar">
+        <div class="row profile-head-side-list">
+          <div class="col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
+            <a href="index.html">
+              <img src="./imgs/logo.png" alt="logo" class="py-3" width="150" height="65">
+            </a>
+          </div>
+          <div class="col-md-10 col-sm-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="row link-bar-list">
+                  <div class="col-md-3 col-sm-12 profile-link">
+                      <a href="my_account.html" class="d-flex align-items-center justify-content-center flex-column py-3">
+                        <img src="./imgs/profile/user.png" alt="user" class="rounded-circle" width="30" height="30">
+                        My Account
+                      </a>
+                  </div>
+                  <div class="col-md-3 col-sm-12 profile-link menu-active">
+                      <a href="message.html" class="d-flex align-items-center justify-content-center flex-column py-3">
+                        <img src="./imgs/profile/msg.png" alt="message" class="rounded-circle" width="30" height="30">
+                        Messages
+                      </a>
+                  </div>
+                  <div class="col-md-3 col-sm-12 profile-link">
+                      <a href="directory.html" class="d-flex align-items-center justify-content-center flex-column py-3">
+                        <img src="./imgs/profile/dir.jpeg" alt="directory" class="rounded-circle" width="30" height="30">
+                        Directory
+                      </a>
+                  </div>
+                  <div class="col-md-3 col-sm-12 profile-link">
+                      <a href="#" class="d-flex align-items-center justify-content-center flex-column py-3">
+                        <img src="./imgs/profile/cog.png" alt="Settings" class="rounded-circle" width="30" height="30">
+                        Settings
+                      </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 ml-auto">
+                <a href="#" class="d-flex align-items-center justify-content-center flex-column p-3">
+                  <img src="./imgs/profile/discon.png" alt="Settings" class="rounded-circle" width="30" height="30">
+                  Logout
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./linkbar  -->
+
+        <div class="row">
+          <div class="col-sm-12 py-2"></div>
+          <div class="col-md-3 mb-2">
+            <ul class="list-group list-group-flush list-first">
+              <a href="addlist.html" class="list-group-item list-group-item-action">
+                <img src="./imgs/profile/addlist.jpeg" alt="addlist" width="15" height="15">
+                Add an listing
+              </a>
+              <a href="mylist.html" class="list-group-item list-group-item-action">
+                <img src="./imgs/profile/mylist.jpeg" alt="mylist" width="15" height="15">
+                My listings
+              </a>
+              <a href="profile.html" class="list-group-item list-group-item-action">
+                <i class="fa fa-user-circle"></i>
+                Profile
+              </a>
+              <a href="edit_profile.html" class="list-group-item list-group-item-action">
+                <img src="./imgs/profile/editprofile.jpeg" alt="editprofile" width="15" height="15">
+                Edit Profile
+              </a>
+              <a href="address.html" class="list-group-item list-group-item-action">
+                <img src="./imgs/profile/map.jpeg" alt="map" width="15" height="15">
+                Addresses
+              </a>
+              <a href="phone.html" class="list-group-item list-group-item-action">
+                <i class="fa fa-volume-control-phone mr-2"></i>
+                Phone
+              </a>
+              <a href="change_password.html" class="list-group-item list-group-item-action">
+                <img src="./imgs/profile/key.jpeg" alt="map" width="15" height="15">
+                Change Password
+              </a>
+            </ul>
+            <div class="d-flex align-items-center justify-content-around my-4">
+              <img src="./imgs/profile/user.png" alt="user" width="30" height="30" class="rounded-circle">
+              <span class="font-weight-bold">Mohamed Ben Abdellah</span>
+              <div class="msg-online"></div>
+            </div>
+            <div class="text-center">
+              <img src="./imgs/profile/shop.png" alt="shop" class="rounded-circle">
+            </div>
+          </div>
+          <!-- ./sidenav  -->
+          
+          <div class="col-md-9 bg-white px-4 pb-4">
+            <div class="col border-bottom px-0 pt-3">
+              <h4 class="sky-blue">Inbox :</h4>
+            </div>
+
+            <p class="col border-bottom-footer pt-3 pb-1 px-0">No converstation</p>
+            <div class="col border-bottom-footer px-0 pb-2 pt-1">
+              <div class="d-flex align-items-center justify-content-between font-weight-bold">
+                <div class="d-flex align-items-center justify-content-start">
+                  <a href="#">
+                    <img src="./imgs/profile/envalope.jpeg" alt="envalope" width="30" height="20">
+                  </a>
+                  <a href="#" class="view-msg">
+                    <img class="ml-3 rounded-circle" src="./imgs/profile/user.png" alt="envalope" width="35" height="35">
+                    <span class="ml-3">Amine Djamil :</span>
+                    <span class="text-secondary ml-2 ">Salam alikom</span>
+                  </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-end mr-3">
+                  <span>21-05-2021 17:43:21</span>
+                  <a href="#"><img src="./imgs/profile/trash.jpeg" class="ml-2" alt="trash" width="17" height="17"></a>
+                </div>
+              </div>
+            </div>
+            <!-- ./msg-col  -->
+
+            <div class="col border-bottom-footer px-0 pb-2 pt-1">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center justify-content-start">
+                  <a href="#">
+                    <img src="./imgs/profile/envalope-o.jpeg" alt="envalope-o" width="30" height="25">
+                  </a>
+                  <a href="#" class="view-msg">
+                    <img class="ml-3 rounded-circle" src="./imgs/profile/user.png" alt="envalope" width="35" height="35">
+                    <span class="ml-3"><strong>Salim Nadjib :</strong></span>
+                    <span class="text-secondary ml-2">Salam alikom mohamed ,I want know min order & last price</span>
+                  </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-end mr-3">
+                  <span class="text-secondary">20-05-2021 10:23:06</span>
+                  <a href="#"><img src="./imgs/profile/trash.jpeg" class="ml-2" alt="trash" width="17" height="17"></a>
+                </div>
+              </div>
+            </div>
+            <!-- ./msg-col  -->
+
+            <div class="card border-secondary">
+              <div class="card-header d-flex align-items-center justify-content-between">
+                <div class="msg-status d-flex align-items-center">
+                  <div class="msg-online"></div>
+                  <span class="ml-3 font-weight-bold">Salim Nadjib</span>
+                  <a href="#" class="ml-3 text-danger font-weight-bold"><i class="fa fa-ban"></i> Block</a>
+                </div>
+                <a href="#" class="close" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </a>
+              </div>
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="chat-messages">
+                    <div class="chat-message-left pb-4">
+                      <div>
+                        <div class="text-muted small text-nowrap mt-2">2:42 am</div>
+                      </div>
+                      <div class="flex-shrink-1 bg-sender rounded py-2 px-3 ml-3">
+                        <div class="font-weight-bold mb-1">Salim Nadjib</div>
+                        Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                      </div>
+                    </div>
+
+                    <div class="chat-message-right mb-4">
+                      <div>
+                        <div class="text-muted small text-nowrap mt-2">2:43 am</div>
+                      </div>
+                      <div class="flex-shrink-1 bg-receiver rounded py-2 px-3 mr-3">
+                        <div class="font-weight-bold mb-1">SoogPiece</div>
+                        Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                      </div>
+                    </div>
+
+                    <div class="chat-message-left pb-4">
+                      <div>
+                        <div class="text-muted small text-nowrap mt-2">2:44 am</div>
+                      </div>
+                      <div class="flex-shrink-1 bg-sender rounded py-2 px-3 ml-3">
+                        <div class="font-weight-bold mb-1">Salim Nadjib</div>
+                        Sit meis deleniti eu, pri vidit meliore docendi ut, an eum erat animal commodo.
+                      </div>
+                    </div>
+
+                    <div class="chat-message-right mb-4">
+                      <div>
+                        <div class="text-muted small text-nowrap mt-2">2:45 am</div>
+                      </div>
+                      <div class="flex-shrink-1 bg-receiver rounded py-2 px-3 mr-3">
+                        <div class="font-weight-bold mb-1">SoogPiece</div>
+                        Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                      </div>
+                    </div>
+
+                    <div class="chat-message-left pb-4">
+                      <div>
+                        <div class="text-muted small text-nowrap mt-2">2:46 am</div>
+                      </div>
+                      <div class="flex-shrink-1 bg-sender rounded py-2 px-3 ml-3">
+                        <div class="font-weight-bold mb-1">Salim Nadjib</div>
+                        Sit meis deleniti eu, pri vidit meliore docendi ut, an eum erat animal commodo.
+                      </div>
+                    </div>
+
+                    <div class="chat-message-right mb-4">
+                      <div>
+                        <div class="text-muted small text-nowrap mt-2">2:47 am</div>
+                      </div>
+                      <div class="flex-shrink-1 bg-receiver rounded py-2 px-3 mr-3">
+                        <div class="font-weight-bold mb-1">SoogPiece</div>
+                        Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                      </div>
+                    </div>
+
+                    <div class="chat-message-left pb-4">
+                      <div>
+                        <div class="text-muted small text-nowrap mt-2">2:48 am</div>
+                      </div>
+                      <div class="flex-shrink-1 bg-sender rounded py-2 px-3 ml-3">
+                        <div class="font-weight-bold mb-1">Salim Nadjib</div>
+                        Sit meis deleniti eu, pri vidit meliore docendi ut, an eum erat animal commodo.
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer text-muted">
+                <div class="flex-grow-0">
+                  <div class="input-group">
+                    <a href="#" class="btn btn-success msg-smily"><img src="./imgs/profile/smily.jpeg" alt="imoji" class="rounded-circle" width="20" height="20"></a>
+                    <input type="text" class="form-control" placeholder="Type your message">
+                    <button class="btn btn-primary"><img src="./imgs/profile/arrow.jpeg" alt="send" width="20" height="20"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+		<!-- ./Profile-section -->
+		
+		
+		<!-- footer -->
+		<section class="footer">
+		  <div class="container-fluid">
+		    <div class="row p-3  footer-desktop">
+		      <div class="col-md-3" style="border-right: 1px solid #ccc;">
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Car Part</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/car.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Truck Part</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/truck.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Motorcycle Part</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/bike.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Machine Part</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/machine.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Works Shop& Service</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/work.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Filtre</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/filter.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Wind shield</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/wind.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Battery</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/batery.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Lubricant & Grease</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/lube.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Accesories</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/acces.png"></div>
+		        </div>
+		      </div>
+
+		      <div class="col-md-3" style="border-right: 1px solid #ccc;">
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Tire & Wheels</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/tyre.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Truck Assistance</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/assist.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Ac / Air Conditioner</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/ac.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Lathe Milling</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/lathe.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Electrical Part</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/electric.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Agriculturer Part</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/agri.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Industrial Part</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/industril.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Belt & Bearing</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/belt.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Joint Spilt</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/joint.png"></div>
+		        </div>
+		        <div class="row border-bottom-footer cat-item m-0 py-1">
+		          <div class="col-9 pl-0"><a class="footer-links" href="index.html">Tools</a></div>
+		          <div class="col-3 pr-0"><img class="footer-links-imgs" src="./imgs/gcolor/tools.png"></div>
+		        </div>
+		      </div>
+		      <div class="col-md-3">
+		        <div class="row" style="border-right: 1px solid #ccc;">
+		          <div class="col-md-12 mb-3"><a class="footer-links" href="#">Contact</a></div>
+		          <div class="col-md-12 mb-3"><a class="footer-links" href="#">SoogPiece Stores</a></div>
+		          <div class="col-md-12 mb-3"><a class="footer-links" href="#">Ads on SoogPiece</a></div>
+		          <div class="col-md-12 mb-3"><a class="footer-links" href="#">How to post a listing ?</a></div>
+		          <div class="col-md-12 mb-3"><a class="footer-links" href="#">Legal informations</a></div>
+		          <div class="col-md-12 mb-3"><a class="footer-links" href="#">
+		          	<img class="mr-1 fb-footer" src="./imgs/facebook.png"> Facebook</a>
+		          </div>
+		          <div class="col-md-12 mb-3"><a class="footer-links" href="#">Version française</a></div>
+		        </div>
+		      </div>
+		      <div class="col-md-3">
+		        <img class="" style="width: 60%;margin-bottom: 10px;" src="./imgs/logo.png">
+		        <span>
+		          The use of this website needs the acceptation of Global conditions and the reglementation concerning the
+		          respect of private life
+		        </span>
+		      </div>
+		    </div>
+		  </div>
+		  <div id="footer_copyrights">
+        <div class="footer-desktop text-center">All brands and trademarks mentionned on SoogPiece are property of their respective owners.</div>
+        <div class="mob-link clearfix mb-4 border-bottom-footer pb-4">
+          <span class="float-left mr-4"><a href="./list.html">Contact</a></span>
+          <!-- <span class="float-left mr-4"><a href="./list.html">Soogpiece blinds</a></span> -->
+          <span class="float-left mr-4"><a href="./list.html">How to advertisev on Soogpiece?</a></span>
+          <!-- <span class="float-left mr-4"><a href="./list.html">Legal information</a></span> -->
+          <span class="float-left mr-4"><a href="./list.html"><img class="fb-footer" src="./imgs/facebook.png" alt="facebook"> Facebook</a></span>
+          <span class="float-left mr-4 dark-link"><a href="./list.html">انسخة العربية</a></span>
+          <!-- <span class="float-left mr-4"><a href="./list.html">Pc version</a></span> -->
+        </div>
+        <p class="general-condition mx-2 my-4">Use of this website implies acceptance of the <a class=" dark-link" href="#">General Conditions</a> and the Privacy Policy.</p>
+        <p class="general-condition mx-2 my-2">All trademarks appearing on soogpiece.com are the property of their respective owners.</p>
+      </div>
+		</section>
+		<!-- ./footer -->
+	</div>
+
+	<!-- ./mobile -->
+
+
+	<!-- Optional JavaScript jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	
+	<!-- touchSwipe library -->
+	<script src="js/jquery.touchSwipe.min.js"></script>
+	
+	<!-- Slider Javascript file -->
+	<script src="js/jquery.slideandswipe.min.js"></script>
+	
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src='js/slick.js'></script>
+	<script src='js/app.js'></script>
+  <script src='js/announce.js'></script>
+
+</body>
+
+</html>

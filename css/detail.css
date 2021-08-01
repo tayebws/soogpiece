@@ -1,0 +1,284 @@
+/*===========================Detail page css ============================*/
+.cat-toggle {
+	background: #fff;
+	position: relative;
+	display: none;
+	width: 17.35%;
+}
+.cat-toggle:hover {
+	display: block;
+}
+.add-area {
+	border: 1px solid #d5d5d5;
+}
+@media only screen and (max-width: 792px) {
+	.add-area {
+		display: none;
+	}
+}
+
+/********Secondary Menu Css**********/
+.secondary-menu {
+	background: #ccc;
+}
+
+.sec-menu-parent-1 p {
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+.sec-menu-parent-2 p {
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+.sec-menu-parent-2 p {
+	margin-left: -35%;
+}
+.sec-menu-child-1 {
+	width: 100%;
+	opacity: 0.9;
+	position: absolute;
+	z-index: 7;
+}
+.sec-menu-child-2 {
+	width: 100%;
+	opacity: 0.9;
+	position: absolute;
+	z-index: 7;
+}
+
+@media only screen and (min-width: 792px) {
+	.sec-menu-parent-1 {
+		width: 20%;
+	}
+	.sec-menu-child-1 {
+		width: 20%;
+		border: 2px solid #ccc;
+		margin-left: 1rem;
+	}
+	.sec-menu-child-2 {
+		width: 20%;
+		border: 2px solid #ccc;
+		margin-left: 8rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.sec-menu-parent-1 p {
+		font-size: 1rem;
+	}
+	.sec-menu-parent-2 p {
+		font-size: 1rem;
+	}
+}
+
+/************ Parts Detial ***********/
+.detail-info {
+	border-radius: 3px;
+	border: 2px solid #e5e5e5;
+}
+.detail-item {
+	background: #f8f8f8;
+	border: 1px solid #e0e0e0;
+}
+.detail-item-info {
+	background: #fff;
+	text-align: center;
+}
+.detail-icon {
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	padding: 5px;
+}
+.btn-tooltip {
+	border-radius: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+.review-heading {
+	font-size: 1.5rem;
+}
+.review-avg {
+	font-size: 3rem;
+	margin-bottom: 0px;
+	color: #a9a9a9;
+}
+.review-total {
+	color: #a9a9a9;
+}
+.card-border {
+	border: 5px solid #E5E5E5;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+	.spec-2 {
+		margin-top: 1rem !important;
+	}
+	.spec-3 {
+		margin-top: 1rem !important;
+	}
+}
+.detail-info .form-control:focus {
+	border-color: #ccc;
+	outline: 0;
+	box-shadow: none;
+}
+
+.tele a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.tele .blur {
+	filter: blur(3px);
+}
+
+@media only screen and (max-width: 768px) {
+  .tele-desk {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .tele-mob {
+    display: none;
+  }
+}
+
+.num-display {
+	color: #009dff;
+	font-weight: bolder;
+	margin-left: 2.4rem;
+}
+
+.num-display:hover {
+	cursor: pointer;
+}
+
+.mail-link a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.buttons a {
+	font-size: 1.15rem;
+	margin-bottom: 1rem;
+}
+.buttons .msg {
+	background: #f4b525;
+}
+.buttons .report {
+	background: #f34c17;
+}
+.buttons .record {
+	background: #69b708;
+}
+.buttons .share {
+	background: #0078d4;
+}
+
+/* Suggestions CSS */
+#suggestions {
+	/* background: #eeeeee; */
+	font-weight: 600;
+}
+#suggestions .date {
+	background: #c0c0c0;
+}
+
+/********************************************************************/
+/*Dropdowns*/
+.vodiapicker{
+  display: none; 
+}
+
+#a{
+  padding-left: 0px;
+  margin: 0;
+}
+
+#a img, .btn-select img{
+  width: 32px;
+  
+}
+
+#a li{
+  list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#a li:hover{
+  background-color: #F4F3F3;
+  cursor: pointer;
+}
+
+#a li img{
+  margin: 2px 0 2px 20px;
+}
+
+#a li span {
+  margin-left: 8px;
+}
+.btn-select li span {
+  margin-left: 10px;
+}
+
+/* item list */
+
+.b{
+  display: none;
+  width: 100%;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 5px;
+  height: 205px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.open{
+  display: show !important;
+}
+.btn-select{
+  margin-bottom: 12px;
+  width: 100%;
+  height: 34px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;     
+}
+.btn-select li{
+  list-style: none;
+  float: left;
+  padding-bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-select:hover li{
+  margin-left: 10px;
+}
+
+.btn-select:hover{
+  background-color: #F4F3F3;
+  border: 1px solid transparent;
+  box-shadow: inset 0 0px 0px 1px #ccc; 
+}
+.btn-select:focus{
+  outline:none;
+}
+
+/*Bread-Crums*/
+.breadcrum {
+	background-color: #E9ECEF;
+	padding: 0.75rem 1.25rem;
+	font-size: 1rem;
+	border-radius: 3px;
+}
