@@ -39,11 +39,54 @@
           <a href="index.html" class="m-name" style="margin-top: 4px;">
             <h3 class=""><img width="84" src="./imgs/logo.png"></h3>
           </a>
-          <div class="d-flex justify-content-between align-items-center">
+          <<div class="d-flex justify-content-between align-items-center">
             <span class="d-flex align-items-center justify-content-between" style="margin-top: 10px;">
-              <a href="mylist.html">
+              <a href="mylist.html" data-toggle="modal" data-target="#historyModal">
                 <img src="./imgs/bookmark.svg" alt="bookmark" class="icon-search">
               </a>
+              <!-- History-Modal -->
+              <div class="modal fade mt-5" id="historyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header modalHead">
+                      <h5 class="modal-title text-white mx-auto mt-0 font-weight-bold" id="exampleModalLabel">History</h5>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="list-group list-group-flush">
+                        <a href="#" class="border-bottom-footer">
+                          <li class="list-group-item">
+                            Reparation  Airbag Alger
+                            <p class="text-info mb-0">Repair Parts</p>
+                          </li>
+                        </a>
+                        <a href="#" class="border-bottom-footer">
+                          <li class="list-group-item">
+                            Reparation  Airbag Alger
+                            <p class="text-info mb-0">Repair Parts</p>
+                            <p class="text-warning mb-0">3900 DZD Fixed</p>
+                          </li>
+                        </a>
+                        <a href="#" class="border-bottom-footer">
+                          <li class="list-group-item">
+                            Reparation  Airbag Alger
+                            <p class="text-info mb-0">Repair Parts</p>
+                            <p class="text-warning mb-0">10 DZD Offered</p>
+                          </li>
+                        </a>
+                        <a href="#" class="border-bottom-footer">
+                          <li class="list-group-item">
+                            Reparation  Airbag Alger
+                            <p class="text-info mb-0">Repair Parts</p>
+                          </li>
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="modal-footer mx-auto border-0">
+                      <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <a href="message.html"><i class="fa fa-envelope-o pl-3 pr-1 icon-search"></i></a>
               <a href="profile.html"><i class="fa fa-user-circle pl-3 pr-1 icon-search"></i></a>
             </span>
